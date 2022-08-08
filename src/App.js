@@ -12,19 +12,28 @@ const defaultTodos=[
   {text: 'llorar con la llorona', completed: false}
 ]
 
+let searchedTodos = []
+
 function App() {
+ 
   const [todos, setTodos] = React.useState(defaultTodos)
   const [searchValue, setSearchValue]= React.useState('')
 
   const countCompleted = todos.filter((todo)=> !!todo.completed).length
   const todosTotal = todos.length
 
-  const searchedTodos = []
-
-  if(searchedTodos.length >= 1){
-    searchedTodos = todos
+  if(!searchedTodos.length >= 1){
+    searchedTodos=todos
+    console.log("no cambio el valor")
+  }else{
+    searchedTodos=todos.filter(todo=> {
+      console.log("si cambio el valor")
+      const todoText = todo.text.toLowerCase()
+      const searchText = searchValue.toLowerCase();
+      return todoText.includes(searchText)
+    })
+    
   }
-
 
   return (
     <React.Fragment>
