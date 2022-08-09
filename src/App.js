@@ -35,6 +35,20 @@ function App() {
     
   }
 
+  const completeTodo = (text)=>{
+    const todoIndex = todos.findIndex(todo => todo.text=== text)
+    const newTodos = [...todos]
+    newTodos[todoIndex].completed = true
+    setTodos(newTodos)
+  }
+
+  const deleteTodo = (text) => {
+    const todoIndex = todos.findIndex(todo => todo.text === text)
+    const newTodos = [...todos]
+    newTodos.splice(todoIndex, 1)
+    setTodos(newTodos)
+  }
+
   return (
     <React.Fragment>
       <TodoCounter 
@@ -47,7 +61,7 @@ function App() {
       />
       <TodoList>
         {searchedTodos.map(todo => (
-          <TodoItem key={todo.text} info={todo.text} completed={todo.completed}/>
+          <TodoItem key={todo.text} info={todo.text} completed={todo.completed} onComplete={()=> completeTodo(todo.text)} onDeleteTodo={()=> deleteTodo(todo.text)}/>
         ))}
       </TodoList>
       <CreateTodoButton />
