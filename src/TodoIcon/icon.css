@@ -1,0 +1,34 @@
+.check{
+    width: 50px;
+    height: 50px;
+    background-image: url("../../public/check.png");   
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(189, 189, 189);
+    border-radius: 50%;
+}
+
+.check-completed{
+    background-color: rgba(98, 212, 4, 0.76);
+}
+
+.check:hover{
+    background-color: rgba(98, 212, 4, 0.76);
+}
+
+.cerrar{
+    width: 40px;
+    height: 40px;
+    margin-top: -70px;
+    background-image: url("../../public/close.png");
+    background-size: 34px 34px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(189, 189, 189);
+    border-radius: 50%;
+}
+
+.cerrar:hover{
+    background-color: rgb(253, 65, 65);
+}
