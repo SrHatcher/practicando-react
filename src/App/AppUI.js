@@ -10,19 +10,29 @@ import { TodoForm } from "../TodoForm";
 import { Skeleton } from "../Skeleton"
 
 function AppUI(){
-  const {error, loading, searchedTodos, completeTodo, deleteTodo, openModal, setOpenModal} = React.useContext(TodoContext)
+  const {
+    error,
+    loading,
+    searchedTodos,
+    openModal,
+    setOpenModal,
+    totalTodos,
+    completedTodos,
+    searchValue, 
+    setSearchValue
+    } = React.useContext(TodoContext)
 
     return(
     <React.Fragment>
-      <TodoCounter />
-      <TodoSearch />
+      <TodoCounter totalTodos={totalTodos} completedTodos={completedTodos}/>
+      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue}/>
           <TodoList>
             {error  && <p>Hubo un error!</p>}
             {loading  && <Skeleton />}
             {(!loading  && !searchedTodos.length) && <p>Crea tu primer TODO</p>}
 
             {searchedTodos.map(todo => (
-              <TodoItem key={todo.text} info={todo.text} completed={todo.completed} onComplete={()=> completeTodo(todo.text)} onDeleteTodo={()=> deleteTodo(todo.text)}/>
+              <TodoItem key={todo.text} info={todo.text} completed={todo.completed}/>
             ))}
           </TodoList>
 

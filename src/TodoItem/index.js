@@ -3,7 +3,6 @@ import './TodoItem.css';
 import {TodoIcon} from '../TodoIcon'
 
 function TodoItem(props){
-    const tipo= "check"
     return(
       <li className="TodoItem">
         <TodoIcon tipo="check" info={props.info} completed={props.completed}></TodoIcon>
