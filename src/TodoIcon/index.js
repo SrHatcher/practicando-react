@@ -1,14 +1,11 @@
 import React from "react";
 import "./icon.css"
-import {TodoContext} from "../todoContext"
 
 
 
-function TodoIcon(props){
-    const {completeTodo, deleteTodo} = React.useContext(TodoContext)
-
+function TodoIcon({tipo, info, completed, completeTodo, deleteTodo}){
     let clase;
-    if(props.tipo==="check"){
+    if(tipo==="check"){
         clase="check"
     }else{
         clase="cerrar"
@@ -16,11 +13,11 @@ function TodoIcon(props){
 
     return(
          <>
-            <span className={`${clase} ${props.completed && 'check-completed'}`} onClick={()=> {
-                    if(props.tipo==="check"){
-                        completeTodo(props.info)
+            <span className={`${clase} ${completed && 'check-completed'}`} onClick={()=> {
+                    if(tipo==="check"){
+                        completeTodo(info)
                     }else{
-                        deleteTodo(props.info)
+                        deleteTodo(info)
                     }
                 }}></span>
          </>
