@@ -1,11 +1,11 @@
 import React from "react";
+import "./title.css"
 
-function TodoTitle(){
+function TodoTitle({children}){
     return(
-        <>
-            <h1>TO-DO Machine</h1>
-            <h3>By Sr.Hatcher</h3>
-        </>
+        <header className="header">
+            {children}
+        </header>
     )
 }
 

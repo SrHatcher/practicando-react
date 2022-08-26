@@ -1,12 +1,33 @@
+li{
+  display: flex;
+  margin: 0 0 20px;
+}
+
+.corte-figura{
+  background-color: #FAFAFA;
+  width: 20px;
+  height: 100px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 
+  100% 100%, 0 100%, 0% 60%, 0 20%);
+}
+
+.corte-figura2{
+  background-color: #FAFAFA;
+  margin-left: -1px;
+  width: 20px;
+  height: 100px;
+  clip-path: polygon(0 0, 100% 0, 100%  80%,
+   0 100%, 0 100%);
+}
+
 .TodoItem {
-    background-color: #FAFAFA;
+    border: none;
+    background-color: #FAFAFA;  
     position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
-    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
-    margin: 20px auto;
   }
   
   .TodoItem-p {

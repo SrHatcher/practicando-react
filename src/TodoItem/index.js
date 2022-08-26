@@ -1,16 +1,20 @@
 import React from "react";
 import './TodoItem.css';
-import {TodoIcon} from '../TodoIcon'
+import {IconComplete, IconDelete} from '../TodoIcon'
 
 function TodoItem(props){
     return(
-      <li className="TodoItem">
-        <TodoIcon tipo="check" info={props.info} completed={props.completed} completeTodo={props.completeTodo} deleteTodo={props.deleteTodo}></TodoIcon>
-        <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
-          {props.info}
-        </p>
-        <TodoIcon tipo="cerrar" info={props.info} completed={props.completed} completeTodo={props.completeTodo} deleteTodo={props.deleteTodo}></TodoIcon>
-      </li>  
+      <li> 
+        <div className="corte-figura"></div>
+        <div className="TodoItem">
+          <IconComplete tipo="check" info={props.info} completed={props.completed} completeTodo={props.completeTodo} deleteTodo={props.deleteTodo}></IconComplete>
+          <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
+            {props.info}
+          </p>
+          <IconDelete />
+        </div>  
+        <div className="corte-figura2"></div>
+      </li>
     )
 }
 

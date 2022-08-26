@@ -1,0 +1,11 @@
+.header{
+    color: #E0E0E0;
+}
+
+header.header h1{
+    margin-bottom: 5px;
+}
+
+header.header h3{
+    margin-top: 5px;
+}

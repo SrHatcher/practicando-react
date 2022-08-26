@@ -3,25 +3,16 @@ import "./icon.css"
 
 
 
-function TodoIcon({tipo, info, completed, completeTodo, deleteTodo}){
-    let clase;
-    if(tipo==="check"){
-        clase="check"
-    }else{
-        clase="cerrar"
-    }
-
+function IconComplete({info, completed, completeTodo, deleteTodo}){
     return(
-         <>
-            <span className={`${clase} ${completed && 'check-completed'}`} onClick={()=> {
-                    if(tipo==="check"){
-                        completeTodo(info)
-                    }else{
-                        deleteTodo(info)
-                    }
-                }}></span>
-         </>
+        <span className={`check ${completed && 'check-completed'}`} onClick={()=> { completeTodo(info) }}></span>
     )
 }
 
-export {TodoIcon}
+function IconDelete(){
+    return(
+        <div className="delete">X</div>
+    )    
+}
+
+export {IconComplete, IconDelete}
