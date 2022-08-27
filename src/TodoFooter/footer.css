@@ -11,11 +11,30 @@ footer{
     margin-bottom: 20px;
 }
 
+footer p{
+    padding: 0 55px;
+    text-align: center;
+    font-size: 20px;
+}
+
 .contorno-footer{
     width: 223px;
-    height: 31px;
-    background-image: url("./contorno_footer2.svg");
+    height: 65px;
+    background-image: url("./contorno-rojo-co.svg");
+    background-position: left;
+    background-repeat: no-repeat;
     position: absolute;
-    top: -100px;
-    left: 0;
+    top: -10px;
+    left: -23px;
+}
+
+.contorno-footer2{
+    width: 200px;
+    height: 65px;
+    background-image: url("./contorno-rojo-co2.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: -23px;
 }
