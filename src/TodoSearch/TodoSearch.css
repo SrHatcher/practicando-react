@@ -38,7 +38,7 @@
     background-size: 236px 84px;
     position: absolute;
     top: -15px;
-
+    z-index: -1;
   }
 
   .contorno-TodoSearch2{
@@ -51,6 +51,7 @@
     position: absolute;
     right: 0;
     top: 5px;
+    z-index: -1;
   }
 
   .contenedor-search{
