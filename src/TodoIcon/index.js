@@ -7,9 +7,11 @@ function IconComplete({info, completed, completeTodo, deleteTodo}){
     )
 }
 
-function IconDelete(){
+function IconDelete({info, deleteTodo}){
     return(
-        <div className="delete">X</div>
+        <>
+        <span className="delete" onClick={()=>{deleteTodo(info)}}>X</span>
+        </>
     )    
 }
 

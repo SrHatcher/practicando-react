@@ -8,9 +8,15 @@ function TodoSearch({searchValue, setSearchValue}){
 
     return(
         <>
-            <input className='TodoSearch'  placeholder='. . .' value={searchValue} onChange={onSearchValue}/>
-            <p className='buscar'>Buscar</p>
-            <p className='buscar'>バスカー</p>
+            <div className='contenedor-search'>
+                <div className='contorno-TodoSearch'></div>
+                    <input className='TodoSearch'  placeholder='. . .' value={searchValue} onChange={onSearchValue}/>
+                <div className='contorno-TodoSearch2'></div>
+                <div className='barras'></div>
+                <div className='barras2'></div>
+                <p className='buscar'>Buscar</p>
+                <p className='buscar'>バスカー</p> 
+            </div>
         </>
     )
 }

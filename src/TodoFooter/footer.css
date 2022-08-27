@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.contorno-footer{
+    width: 223px;
+    height: 31px;
+    background-image: url("./contorno_footer2.svg");
+    position: absolute;
+    top: -100px;
+    left: 0;
+}

@@ -3,6 +3,7 @@
     background: #050017;
     border: 3px solid #430333;
     margin: 20px auto;
+    margin-bottom: 40px;
     height: 64px;
     width: 80%;
     font-size: 32px;
@@ -26,4 +27,56 @@
     color: #e0e0e07e;
     font-size: 24px;
     margin: 0;
+  }
+
+  .contorno-TodoSearch{
+    width: 236px;
+    height: 84px;
+    background-image: url("./contorno_buscar1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 236px 84px;
+    position: absolute;
+    top: -15px;
+
+  }
+
+  .contorno-TodoSearch2{
+    width: 236px;
+    height: 84px;
+    background-image: url("./contorno_buscar2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 236px 84px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+
+  .contenedor-search{
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .barras{
+    width: 120px;
+    height: 64px;
+    background-image: url("./barras_buscar.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120px 64px;
+    position: absolute;
+  }
+
+ .barras2{
+    width: 120px;
+    height: 64px;
+    background-image: url("./barras_buscar.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120px 64px;
+    position: absolute;
+    right: 0;
   }

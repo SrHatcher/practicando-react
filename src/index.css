@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
   background: #16151A;
   color: #1E1E1F;
@@ -9,5 +10,5 @@ body{
 #root{
   margin: 0 24px;
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
 }

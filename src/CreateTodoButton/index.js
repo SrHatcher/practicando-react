@@ -7,9 +7,13 @@ function CreateTodoButton(props){
     }
 
     return(
-        <button className="CreateTodoButton"
-            onClick={onClickButton}
-        >+</button>
+        <>
+            <div className="contenedor-botonAdd">
+                <button className="CreateTodoButton"
+                    onClick={onClickButton}
+                >+</button>
+            </div>
+        </>
     )
 }
 

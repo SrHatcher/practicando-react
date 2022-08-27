@@ -9,6 +9,8 @@ import { TodoForm } from "../TodoForm";
 import { Skeleton } from "../Skeleton"
 import { useTodos } from "./useTodos"
 import { TodoTitle } from "../TodoTitle"
+import { TodoFooter } from '../TodoFooter';
+import { TodoBackground } from "../TodoBackground"
 
 function App() {
   const {
@@ -26,14 +28,14 @@ function App() {
     deleteTodo,
   } = useTodos();
 
-  console.log(totalTodos, completedTodos)
-
   return(
     <React.Fragment>
+      
       <TodoTitle>
         <h1>TO-DO Machine</h1>
         <h3>By Sr.Hatcher</h3>
       </TodoTitle>
+      <TodoBackground/>
       <TodoCounter>
         <p>Has completado</p>
           <h2>{ completedTodos } de { totalTodos }</h2>
@@ -48,6 +50,7 @@ function App() {
         {searchedTodos.map(todo => (
           <TodoItem key={todo.text} info={todo.text} completed={todo.completed} completeTodo={completeTodo}  deleteTodo={deleteTodo}/>
         ))}
+        <CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
       </TodoList>
 
       {!!openModal && 
@@ -55,9 +58,10 @@ function App() {
           <TodoForm addTodo={addTodo} setOpenModal={setOpenModal}></TodoForm>
         </Modal>
       }
-
-      <CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
       
+      <TodoFooter>
+        <p>Proyecto del curso de introduccion a React</p>
+      </TodoFooter>
     </React.Fragment>
     )
 }

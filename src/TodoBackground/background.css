@@ -1,0 +1,37 @@
+.figura-gris1{
+    width: 227px;
+    height: 252px;
+    background-image: url("./figrua_gris1_fondo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 227px 252px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    z-index: -1;
+}
+
+.figura-gris2{
+    width: 380px;
+    height: 162px;
+    background-image: url("./figura_gris2_fondo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 380px 162px;
+    position: absolute;
+    bottom: -15px;
+    z-index: -1;
+}
+
+.figura-roja{
+    width: 131px;
+    height: 260px;
+    background-image: url("./figura_roja_fondo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 131px 260px;
+    position: absolute;
+    z-index: -1;
+    top: -25px;
+    right: -24px;
+}
