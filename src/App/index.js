@@ -28,6 +28,7 @@ function App() {
     deleteTodo,
   } = useTodos();
 
+  console.log(searchedTodos)
   return(
     <React.Fragment>
       
@@ -42,16 +43,27 @@ function App() {
         <p>Tareas pendientes</p>
       </TodoCounter>
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue }/>
-      <TodoList>
-        {error  && <p>Hubo un error!</p>}
-        {loading  && <Skeleton />}
-        {(!loading  && !searchedTodos.length) && <p>Crea tu primer TODO</p>}
 
-        {searchedTodos.map(todo => (
-          <TodoItem key={todo.text} info={todo.text} completed={todo.completed} completeTodo={completeTodo}  deleteTodo={deleteTodo}/>
-        ))}
-        <CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
-      </TodoList>
+      <TodoList 
+        error={error}
+        loading={loading}
+        searchedTodos={searchedTodos}
+
+        onError={()=> <p className='p-todoList'>Hubo un Error!</p>}
+        onLoading={()=><Skeleton/>}
+        onEmptyTodos={()=><p className='p-todoList'>Crea tu Primer TO-DO</p>}
+        render={todo=>(
+            <TodoItem
+            key={todo.text} 
+            info={todo.text} 
+            completed={todo.completed} 
+            completeTodo={completeTodo}  
+            deleteTodo={deleteTodo}
+            />
+          )
+        }
+        createButton={()=><CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />}
+      />
 
       {!!openModal && 
         <Modal>

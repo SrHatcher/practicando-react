@@ -6,3 +6,12 @@ ul {
     flex-direction: column;
     position: relative;
   }
+
+.p-todoList{
+  margin: 100px 0px;
+  color: #e0e0e07e;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'inter', sans-serif;
+}

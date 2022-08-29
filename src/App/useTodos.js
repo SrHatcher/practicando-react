@@ -4,6 +4,7 @@ import { useLocalStorage } from "./useLocalStorage";
 let searchedTodos = []
 
 function useTodos(){
+    
     const {
         item: todos,
         saveItem: saveTodos,
@@ -17,6 +18,7 @@ function useTodos(){
     const totalTodos = todos.length
 
     if(!searchValue.length>=1){
+        
         searchedTodos=todos;
     }else{
         searchedTodos=todos.filter(todo=>{
@@ -48,6 +50,7 @@ function useTodos(){
         newTodos.splice(todoIndex, 1)
         saveTodos(newTodos)
     }
+    
 
     return(
         {
