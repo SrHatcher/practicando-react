@@ -13,3 +13,7 @@
 .TodoCounter h2{
     margin: 0px;
 }
+
+.TodoCounter--loading{
+    opacity: 25%;
+}

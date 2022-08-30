@@ -11,6 +11,7 @@ import { useTodos } from "./useTodos"
 import { TodoTitle } from "../TodoTitle"
 import { TodoFooter } from '../TodoFooter';
 import { TodoBackground } from "../TodoBackground"
+import {TodoHeader} from "../TodoHeader"
 
 function App() {
   const {
@@ -31,39 +32,44 @@ function App() {
   console.log(searchedTodos)
   return(
     <React.Fragment>
-      
-      <TodoTitle>
-        <h1>TO-DO Machine</h1>
-        <h3>By Sr.Hatcher</h3>
-      </TodoTitle>
-      <TodoBackground/>
-      <TodoCounter>
-        <p>Has completado</p>
-          <h2>{ completedTodos } de { totalTodos }</h2>
-        <p>Tareas pendientes</p>
-      </TodoCounter>
-      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue }/>
+      <TodoHeader loading={loading}>
+        <TodoTitle>
+          <h1>TO-DO Machine</h1>
+          <h3>By Sr.Hatcher</h3>
+        </TodoTitle>
+        <TodoBackground/>
+        <TodoCounter>
+          <p>Has completado</p>
+            <h2>{ completedTodos } de { totalTodos }</h2>
+          <p>Tareas pendientes</p>
+        </TodoCounter>
+        <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue } />
+      </TodoHeader>
 
       <TodoList 
         error={error}
         loading={loading}
         searchedTodos={searchedTodos}
+        totalTodos={totalTodos}
+        searchValue={searchValue}
 
         onError={()=> <p className='p-todoList'>Hubo un Error!</p>}
         onLoading={()=><Skeleton/>}
-        onEmptyTodos={()=><p className='p-todoList'>Crea tu Primer TO-DO</p>}
-        render={todo=>(
-            <TodoItem
-            key={todo.text} 
-            info={todo.text} 
-            completed={todo.completed} 
-            completeTodo={completeTodo}  
-            deleteTodo={deleteTodo}
-            />
-          )
-        }
+        onEmptyTodos={()=> <p className='p-todoList'>Crea tu primer TO-DO</p>}
+        onEmptySearchResults={(searchText)=><p className='p-todoList'>No hay resultados para {searchText}</p>}
         createButton={()=><CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />}
-      />
+      >
+      {todo=>(
+        <TodoItem
+        key={todo.text} 
+        info={todo.text} 
+        completed={todo.completed} 
+        completeTodo={completeTodo}  
+        deleteTodo={deleteTodo}
+        />
+        )
+      }
+      </TodoList>
 
       {!!openModal && 
         <Modal>

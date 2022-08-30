@@ -21,6 +21,10 @@
     outline-color: #61DAFA;
   }
 
+  .TodoSearch:disabled{
+    opacity: 25%;
+  }
+
   .buscar{
     font-family: 'Inter', sans-serif;
     font-style: italic;

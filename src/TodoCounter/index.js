@@ -1,9 +1,9 @@
 import React from 'react';
 import './TodoCounter.css';
 
-function TodoCounter({children}){
+function TodoCounter({children, loading}){
     return (
-        <section className='TodoCounter'>
+        <section className={`TodoCounter ${loading && "TodoCounter--loading"}`}>
             {children}
         </section>
     )
