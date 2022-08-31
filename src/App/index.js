@@ -12,6 +12,7 @@ import { TodoTitle } from "../TodoTitle"
 import { TodoFooter } from '../TodoFooter';
 import { TodoBackground } from "../TodoBackground"
 import {TodoHeader} from "../TodoHeader"
+import { ChangeAlertWithStorageListener } from "../ChangeAlert"
 
 function App() {
   const {
@@ -27,6 +28,7 @@ function App() {
     addTodo, 
     completeTodo,
     deleteTodo,
+    sincronize
   } = useTodos();
 
   console.log(searchedTodos)
@@ -76,6 +78,8 @@ function App() {
           <TodoForm addTodo={addTodo} setOpenModal={setOpenModal}></TodoForm>
         </Modal>
       }
+
+      <ChangeAlertWithStorageListener sincronize={sincronize}/>
       
       <TodoFooter>
         <p>Proyecto del curso de introduccion a React</p>

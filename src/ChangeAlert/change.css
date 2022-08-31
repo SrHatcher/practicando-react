@@ -1,0 +1,25 @@
+.change-alert{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #e0e0e0;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    margin-top: 0px;
+}
+
+div.change-alert p{
+    margin: 0 0 10px 0;
+}
+
+div.change-alert button{
+    width: 120px;
+    height: 40px;
+    font-family: 'inter', sans-serif;
+    color: #252525;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
