@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/practicando-react/static/css/main.f791d669.css",
-    "main.js": "/practicando-react/static/js/main.abf0133e.js",
-    "static/media/boton_check.svg": "/practicando-react/static/media/boton_check.27eeed59c355c28bda34.svg",
-    "static/media/boton_checked.svg": "/practicando-react/static/media/boton_checked.8e4a94f9b3fe900666bd.svg",
-    "static/media/barras_buscar.svg": "/practicando-react/static/media/barras_buscar.e00fd8dd3b1df22ae8b5.svg",
+    "main.css": "/practicando-react/static/css/main.8fe3e4ca.css",
+    "main.js": "/practicando-react/static/js/main.74667927.js",
+    "static/media/boton_check.svg": "/practicando-react/static/media/boton_check.f8b305061944102f9920.svg",
+    "static/media/boton_checked.svg": "/practicando-react/static/media/boton_checked.dadcd559cf798f4078c9.svg",
+    "static/media/barras_buscar.svg": "/practicando-react/static/media/barras_buscar.8e3a5b671dd1286d0fe1.svg",
     "index.html": "/practicando-react/index.html",
-    "static/media/figura_gris2_fondo.svg": "/practicando-react/static/media/figura_gris2_fondo.681fd491adef55cdf5c5.svg",
-    "static/media/figura_roja_fondo.svg": "/practicando-react/static/media/figura_roja_fondo.dc3c1b3cd9616f4a3ddf.svg",
-    "static/media/figrua_gris1_fondo.svg": "/practicando-react/static/media/figrua_gris1_fondo.a872a5b01ee78631d1b8.svg",
-    "static/media/contorno_buscar2.svg": "/practicando-react/static/media/contorno_buscar2.f08df45e011e6077022e.svg",
-    "static/media/contorno-rojo-co2.svg": "/practicando-react/static/media/contorno-rojo-co2.d5710738f2503f98df6e.svg",
-    "static/media/contorno-rojo-co.svg": "/practicando-react/static/media/contorno-rojo-co.740c9609751e5a753722.svg",
-    "static/media/contorno_buscar1.svg": "/practicando-react/static/media/contorno_buscar1.5de4b7f19bbc3ac0162b.svg",
-    "main.f791d669.css.map": "/practicando-react/static/css/main.f791d669.css.map",
-    "main.abf0133e.js.map": "/practicando-react/static/js/main.abf0133e.js.map"
+    "static/media/figura_gris2_fondo.svg": "/practicando-react/static/media/figura_gris2_fondo.b0a1682b8f0a9ef5fc9e.svg",
+    "static/media/figura_roja_fondo.svg": "/practicando-react/static/media/figura_roja_fondo.d8500093bc2d00e1d2ea.svg",
+    "static/media/figrua_gris1_fondo.svg": "/practicando-react/static/media/figrua_gris1_fondo.b1efc607fdfc9c0d041c.svg",
+    "static/media/contorno_buscar2.svg": "/practicando-react/static/media/contorno_buscar2.2a3f6797721fb361da01.svg",
+    "static/media/contorno-rojo-co2.svg": "/practicando-react/static/media/contorno-rojo-co2.a0709d62c703c4fee6c6.svg",
+    "static/media/contorno-rojo-co.svg": "/practicando-react/static/media/contorno-rojo-co.706df6d440f24b232dac.svg",
+    "static/media/contorno_buscar1.svg": "/practicando-react/static/media/contorno_buscar1.f453a3e666bfc590541f.svg",
+    "main.8fe3e4ca.css.map": "/practicando-react/static/css/main.8fe3e4ca.css.map",
+    "main.74667927.js.map": "/practicando-react/static/js/main.74667927.js.map"
   },
   "entrypoints": [
-    "static/css/main.f791d669.css",
-    "static/js/main.abf0133e.js"
+    "static/css/main.8fe3e4ca.css",
+    "static/js/main.74667927.js"
   ]
 }
