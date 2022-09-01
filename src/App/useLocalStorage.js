@@ -6,6 +6,8 @@ function useLocalStorage(itemName, initialValue){
     const [loading, setLoading] = React.useState(true)
     const [item, setItem] = React.useState(initialValue)
     const [change, setChange] = React.useState(true)
+
+    console.log("cuantas veces se renderiza esto?")
   
     React.useEffect(()=>{
       setTimeout(() => {

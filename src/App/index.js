@@ -31,7 +31,6 @@ function App() {
     sincronize
   } = useTodos();
 
-  console.log(searchedTodos)
   return(
     <React.Fragment>
       <TodoHeader loading={loading}>
