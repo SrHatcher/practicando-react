@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/practicando-react/static/css/main.8fe3e4ca.css",
-    "main.js": "/practicando-react/static/js/main.74667927.js",
+    "main.js": "/practicando-react/static/js/main.a71af9ef.js",
     "static/media/boton_check.svg": "/practicando-react/static/media/boton_check.f8b305061944102f9920.svg",
     "static/media/boton_checked.svg": "/practicando-react/static/media/boton_checked.dadcd559cf798f4078c9.svg",
     "static/media/barras_buscar.svg": "/practicando-react/static/media/barras_buscar.8e3a5b671dd1286d0fe1.svg",
@@ -14,10 +14,10 @@
     "static/media/contorno-rojo-co.svg": "/practicando-react/static/media/contorno-rojo-co.706df6d440f24b232dac.svg",
     "static/media/contorno_buscar1.svg": "/practicando-react/static/media/contorno_buscar1.f453a3e666bfc590541f.svg",
     "main.8fe3e4ca.css.map": "/practicando-react/static/css/main.8fe3e4ca.css.map",
-    "main.74667927.js.map": "/practicando-react/static/js/main.74667927.js.map"
+    "main.a71af9ef.js.map": "/practicando-react/static/js/main.a71af9ef.js.map"
   },
   "entrypoints": [
     "static/css/main.8fe3e4ca.css",
-    "static/js/main.74667927.js"
+    "static/js/main.a71af9ef.js"
   ]
 }
